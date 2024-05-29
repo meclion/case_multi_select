@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Case Multi Selects
 
-## Getting Started
+This project utilizes a public API to retrieve user information and implements search and multi-select functionalities.
 
-First, run the development server:
+## Installation and Running
+
+### Prerequisites
+
+To run this project, you need:
+
+- Node.js (version 12 or higher)
+- npm or yarn
+
+### Installation
+
+Clone the repository and install the necessary packages.
 
 ```bash
+git clone https://github.com/meclion/case_multi_select
+cd your-repository
+npm install
+# or
+yarn
+Running the Development Server
+Start the development server.
+
+bash
+코드 복사
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
+Environment Variables
+This project uses a public API address, so it is not managed through an .env file. The public API address is:
+
+https://rickandmortyapi.com
+
+The project code uses this address directly. If needed, you can create an .env file to set up a different API address.
+
+Notes
+The attached API address is a public address and is therefore not managed through an .env file. This project uses the Rick and Morty API to fetch data. For more information about the API, please refer to the Rick and Morty API official documentation.
+
+Contribution
+If you want to contribute, please fork the repository, make your changes, and submit a pull request.
+
+License
+This project is licensed under the MIT License. See the LICENSE file for more details.
+
+Portfolio
+This project is part of my portfolio. Feel free to refer to it when evaluating my skills and experience. If you have any questions or would like to discuss potential opportunities, please contact me.
+
+Contact
+Email: cew517@gmail.com
+LinkedIn: https://www.linkedin.com/in/eun-woo-choi-762835129/
+Portfolio: https://github.com/meclion/
+Thank you for considering my project!
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
