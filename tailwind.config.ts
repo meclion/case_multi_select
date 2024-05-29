@@ -13,8 +13,23 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      scrollbar: {
+        transparent: {
+          "&::-webkit-scrollbar": {
+            backgroundColor: "transparent",
+          },
+          "&::-webkit-scrollbar-thumb": {
+            backgroundColor: "rgba(0, 0, 0, 0.2)", // Adjust the transparency level as needed
+          },
+        },
+      },
     },
   },
-  plugins: [],
+  variants: {
+    extend: {
+      scrollbar: ["rounded"], // Optional: for rounded scrollbars
+    },
+  },
+  plugins: [require("tailwind-scrollbar")({ nocompatible: true })],
 };
 export default config;
